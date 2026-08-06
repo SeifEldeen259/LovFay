@@ -2,15 +2,15 @@
    EDIT ONLY THIS CONFIGURATION SECTION
    ========================================================================== */
 const CONFIG = {
-  music: "music/kelma-ramy-sabry.mp3",
+  music: "music/Ramy Sabry - Kelma _ رامي صبري - كلمه(MP3_160K).mp3",
   finalLetter: `My love,\n\nEvery little moment with you becomes a memory I want to keep forever. Thank you for making ordinary days feel special, simply by being in them.\n\nHere is to all the beautiful places still waiting for us—and every small laugh between them.\n\nWith all my heart, always.`,
   memories: [
     { title: "Study dates", message: "Even the quiet moments feel special with you.", image: "images/photo_10_2026-08-06_11-20-21.jpg", story: "Some of my favorite memories are the simplest ones: sitting beside you, sharing a table, and feeling completely at home." },
     { title: "Coffee & conversations", message: "You, me, and a little pause from the world.", image: "images/photo_13_2026-08-06_11-20-21.jpg", story: "Every conversation with you has a way of becoming the best part of my day. I could stay here with you forever." },
     { title: "Your everyday magic", message: "You make ordinary days look beautiful.", image: "images/photo_17_2026-08-06_11-20-21.jpg", story: "There is something so lovely about seeing you just being you. It is a reminder that my favorite place is anywhere you are." },
-    { title: "Us", message: "One photo, a thousand reasons to smile.", image: "images/photo_36_2026-08-06_11-20-22.jpg", story: "This is us: imperfect, real, and my favorite kind of happy. Thank you for letting me share this story with you." },
+    { title: "Us", message: "One photo, a thousand reasons to smile.", image: "images/photo_35_2026-08-06_11-20-22.jpg", story: "This is us: imperfect, real, and my favorite kind of happy. Thank you for letting me share this story with you." },
     { title: "Our people, our moments", message: "Love is even sweeter when it is shared.", image: "images/photo_40_2026-08-06_11-20-22.jpg", story: "The best memories are never only about where we were. They are about who was there, and every smile we got to share." },
-    { title: "My favorite view", message: "And somehow, I still fall for you more.", image: "images/photo_44_2026-08-06_11-20-22.jpg", story: "No matter how many memories we make, I will always want one more with you. This is only the beginning of our beautiful story." }
+    { title: "My favorite view", message: "And somehow, I still fall for you more.", image: "images/photo_45_2026-08-06_11-20-22.jpg", story: "No matter how many memories we make, I will always want one more with you. This is only the beginning of our beautiful story." }
   ]
 };
 
