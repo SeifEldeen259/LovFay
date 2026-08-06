@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#32151d" />
+    <meta name="description" content="A little love story, made especially for Zozo." />
+    <title>For Zozo ♡</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__orb ambient__orb--rose"></div>
+      <div class="ambient__orb ambient__orb--gold"></div>
+      <div id="particles" class="particles"></div>
+      <div id="hearts" class="hearts"></div>
+    </div>
+
+    <button id="music-toggle" class="music-toggle" type="button" aria-label="Play background music" aria-pressed="false">
+      <span class="music-toggle__icon" aria-hidden="true">♪</span>
+      <span id="music-label" class="music-toggle__label">Music</span>
+      <span class="music-toggle__waves" aria-hidden="true"><i></i><i></i><i></i></span>
+    </button>
+    <audio id="background-music" preload="none" loop></audio>
+
+    <main class="experience">
+      <section id="loading-screen" class="screen screen--loading" aria-live="polite">
+        <div class="loading-content">
+          <div class="loading-heart" aria-hidden="true">♥</div>
+          <p class="eyebrow">A little moment, just for us</p>
+          <h1>Made with <span aria-hidden="true">♥</span><span class="sr-only">love</span><br />especially for you, Zozo...</h1>
+          <div class="loading-line" aria-hidden="true"><span></span></div>
+        </div>
+      </section>
+
+      <section id="welcome-screen" class="screen screen--welcome is-hidden" aria-labelledby="welcome-title">
+        <div class="welcome-content">
+          <p class="eyebrow welcome-content__eyebrow">A small universe of us</p>
+          <button id="heart-logo" class="heart-logo" type="button" aria-label="A heart made for Zozo">♥</button>
+          <h1 id="welcome-title">Hi, My Love <span>“Zozo”</span> <span aria-hidden="true">♥</span></h1>
+          <p class="welcome-content__message">I made something special for you.</p>
+          <button id="start-button" class="button button--primary" type="button">
+            <span>Start</span><span class="button__arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+        <p class="welcome-footnote">Made from the little moments that mean everything.</p>
+      </section>
+
+      <section id="question-screen" class="screen screen--question is-hidden" aria-labelledby="question-title">
+        <div class="question-card glass-card">
+          <p class="eyebrow">A very important question</p>
+          <div class="question-card__heart" aria-hidden="true">♥</div>
+          <h2 id="question-title">Do you want to<br />break up with me?</h2>
+          <p id="question-message" class="question-card__message" aria-live="polite">Choose wisely, my love.</p>
+          <div id="question-actions" class="question-actions">
+            <button id="no-button" class="button button--primary" type="button">♥&nbsp; No</button>
+            <button id="yes-button" class="button button--ghost" type="button" aria-label="Yes, if you can catch it">💔&nbsp; Yes</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery-screen" class="screen screen--gallery is-hidden" aria-labelledby="memory-title">
+        <div class="gallery-glow" aria-hidden="true"></div>
+        <p id="memory-counter" class="memory-counter" aria-live="polite"></p>
+        <article id="memory-card" class="memory-card" aria-live="polite">
+          <div class="memory-card__inner">
+            <section class="memory-card__face memory-card__front">
+              <p id="memory-message" class="memory-card__message"></p>
+              <h2 id="memory-title"></h2>
+              <div class="memory-photo-wrap">
+                <img id="memory-image" class="memory-photo" src="" alt="A cherished memory" draggable="false" />
+                <span class="photo-hint">Double tap to look closer</span>
+              </div>
+              <button id="flip-button" class="button button--outline" type="button">Flip the Memory <span aria-hidden="true">♥</span></button>
+            </section>
+            <section class="memory-card__face memory-card__back">
+              <p class="eyebrow">The story behind it</p>
+              <h2 id="story-title"></h2>
+              <p id="memory-story" class="memory-story"></p>
+              <button id="flip-back-button" class="text-button" type="button">← See the photo</button>
+            </section>
+          </div>
+        </article>
+        <nav class="gallery-nav" aria-label="Memory navigation">
+          <button id="previous-button" class="nav-button" type="button">← <span>Previous</span></button>
+          <button id="next-button" class="nav-button nav-button--next" type="button"><span>Next</span> →</button>
+        </nav>
+      </section>
+
+      <section id="final-screen" class="screen screen--final is-hidden" aria-labelledby="letter-title">
+        <div class="final-content">
+          <p class="eyebrow">For my favorite person</p>
+          <div id="envelope" class="envelope" aria-hidden="true">
+            <div class="envelope__letter-mark">♥</div>
+            <div class="envelope__letter"></div>
+            <div class="envelope__flap"></div>
+          </div>
+          <article id="love-letter" class="love-letter" aria-live="polite">
+            <p class="love-letter__date">A letter for Zozo</p>
+            <h2 id="letter-title">With all my heart</h2>
+            <p id="letter-text" class="love-letter__text"></p>
+            <div class="letter-question">
+              <span aria-hidden="true">♥</span>
+              <p>Will you keep making memories with me?</p>
+            </div>
+            <button id="always-button" class="button button--primary" type="button">Always <span aria-hidden="true">♥</span></button>
+          </article>
+          <div id="love-reveal" class="love-reveal" aria-live="polite">
+            <div aria-hidden="true">♥</div>
+            <h2>I love you.</h2>
+            <p>More than yesterday.<br />Less than tomorrow. <span aria-hidden="true">♥</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="celebration" class="celebration" aria-hidden="true"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
